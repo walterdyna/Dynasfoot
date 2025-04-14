@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DynaFoot</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>DynaFoot</h1>
+    <div id="start-screen">
+      <p>Bem-vindo ao DynaFoot! Digite seu nome de técnico:</p>
+      <input type="text" id="coach-name" placeholder="Seu nome" />
+      <button id="start-game">Iniciar Carreira</button>
+    </div>
+    <div id="game-screen" class="hidden">
+      <h2 id="coach-info"></h2>
+      <h3>Seu Time: <span id="team-name"></span> | Divisão: <span id="team-division"></span></h3>
+      <div class="actions">
+        <button id="view-squad">Ver Elenco</button>
+        <button id="advance-round">Avançar Rodada</button>
+        <button id="view-standings">Ver Classificação</button>
+        <button id="open-market">Mercado de Jogadores</button>
+        <button id="view-instructions">Instruções</button>
+        <button id="reset-game">Novo Jogo</button>
+      </div>
+      <div id="output"></div>
+    </div>
+    <div id="teams-screen" class="hidden">
+      <h3>Times e Jogos</h3>
+      <div id="teams-list"></div>
+      <button id="back-to-game">Voltar ao Jogo</button>
+    </div>
+    <div id="instructions-screen" class="hidden">
+      <h3>Instruções</h3>
+      <p>Bem-vindo ao DynaFoot! O objetivo do jogo é gerenciar um time de futebol e alcançar o topo. Durante o jogo, você irá:</p>
+      <ul>
+        <li>Escolher um time aleatório.</li>
+        <li>Participar de rodadas e acompanhar o desempenho de seu time.</li>
+        <li>Realizar contratações no mercado e fortalecer seu elenco.</li>
+        <li>Participar de temporadas e lutar pela promoção ou rebaixamento.</li>
+      </ul>
+      <button id="close-instructions">Fechar Instruções</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
